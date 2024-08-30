@@ -15,11 +15,12 @@ public class Rectangle {
     
 
     public double calcArea(){
-       throw new RuntimeException("Not implemented yet");
+       return length * width;
     }
 
     public void doubleSize(){
-        throw new RuntimeException("Not implemented yet");
+        this.length *=2;
+        this.width *= 2;
     }
 
     public double longestLineWithin(){
