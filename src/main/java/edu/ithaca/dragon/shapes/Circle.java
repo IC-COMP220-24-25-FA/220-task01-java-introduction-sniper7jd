@@ -33,4 +33,8 @@ public class Circle {
     public double longestLineWithin(){
         return this.radius * 2;
     }
+
+    public double getRadius() {
+        return this.radius;
+    }
 }
