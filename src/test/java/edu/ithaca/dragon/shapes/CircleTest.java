@@ -30,6 +30,11 @@ public class CircleTest {
     }
 
     @Test
+    public void testLongestLineWithin(){
+        Circle myCircle = new Circle(3);
+        assertEquals(6.0, myCircle.longestLineWithin(), 0.001, "The longest line within the circle should be twice the radius.");    }
+
+    @Test
     public void TestConstructorError(){
         assertThrows(IllegalArgumentException.class, () -> new Circle(0));
     }
