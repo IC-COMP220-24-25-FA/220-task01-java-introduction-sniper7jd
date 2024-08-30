@@ -30,9 +30,17 @@ public class CircleTest {
     }
 
     @Test
-    public void testLongestLineWithin(){
+    public void longestLineWithinTest(){
         Circle myCircle = new Circle(3);
-        assertEquals(6.0, myCircle.longestLineWithin(), 0.001, "The longest line within the circle should be twice the radius.");    }
+        assertEquals(6, myCircle.longestLineWithin(), 0.001, "The longest line within the circle should be twice the radius.");
+    }
+
+    @Test
+    public void doubleSizeTest() {
+        Circle myCircle = new Circle(4);
+        myCircle.doubleSize();
+        assertEquals(8.0, myCircle.getRadius(), 0.001, "The radius should be doubled.");
+    }
 
     @Test
     public void TestConstructorError(){
