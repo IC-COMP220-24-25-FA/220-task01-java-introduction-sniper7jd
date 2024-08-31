@@ -14,6 +14,19 @@ public class RectangleTest {
         Rectangle rect = new Rectangle(10, 20);
         assertEquals(200.0, rect.calcArea(), 0.0001);
     }
+
+    @Test
+    public void longestLineWithinTest(){
+        Rectangle rect = new Rectangle(12,5);
+        assertEquals(13, rect.longestLineWithin(), 0.001, "The longest line within the rect should be diagonal.");
+    }
+
+    // @Test
+    // public void doubleSizeTest() {
+    //     Circle myCircle = new Circle(4);
+    //     myCircle.doubleSize();
+    //     assertEquals(8.0, myCircle.getRadius(), 0.001, "The radius should be doubled.");
+    // }
         
         // myCircle = new Circle(5.5);
         // assertEquals(95.0331, myCircle.calcArea(), 0.0001);
