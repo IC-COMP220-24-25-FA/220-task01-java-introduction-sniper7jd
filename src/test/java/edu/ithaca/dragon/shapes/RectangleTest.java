@@ -21,12 +21,12 @@ public class RectangleTest {
         assertEquals(13, rect.longestLineWithin(), 0.001, "The longest line within the rect should be diagonal.");
     }
 
-    // @Test
-    // public void doubleSizeTest() {
-    //     Circle myCircle = new Circle(4);
-    //     myCircle.doubleSize();
-    //     assertEquals(8.0, myCircle.getRadius(), 0.001, "The radius should be doubled.");
-    // }
+    @Test
+    public void doubleSizeTest() {
+        Rectangle rect = new Rectangle(4,10);
+        rect.doubleSize();
+        assertEquals(160, rect.calcArea(), 0.001, "The radius should be doubled.");
+    }
         
         // myCircle = new Circle(5.5);
         // assertEquals(95.0331, myCircle.calcArea(), 0.0001);
