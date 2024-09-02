@@ -45,16 +45,20 @@ public class ShapeMain {
             } else {
                 System.out.println("Wrong Index");
             }
+
+            System.out.println();
+
+            for (int j = 0; j < 5; j++){
+                System.out.println("Rectangle " + (j+1));
+                System.out.println("Length: " + rectangles.get(j).getLength());
+                System.out.println("Width: " + rectangles.get(j).getWidth());
+                System.out.println("Area: "+ rectangles.get(j).calcArea());
+                System.out.println("Diagonal: "+ rectangles.get(j).longestLineWithin());
+                System.out.println();
+            }
         }
 
-        for (int i = 0; i < 5; i++){
-            System.out.println("Rectangle " + (i+1));
-            System.out.println("Length: " + rectangles.get(i).getLength());
-            System.out.println("Width: " + rectangles.get(i).getWidth());
-            System.out.println("Area: "+ rectangles.get(i).calcArea());
-            System.out.println("Diagonal: "+ rectangles.get(i).longestLineWithin());
-            System.out.println();
-        }
+        
 
         scanner.close();
     }
