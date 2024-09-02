@@ -1,4 +1,6 @@
 package edu.ithaca.dragon.shapes;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Rectangle {
     private double length;
@@ -26,5 +28,8 @@ public class Rectangle {
     public double longestLineWithin(){
         return Math.sqrt(length * length + width * width);
     }
-    
+
 }
+
+    
+    
