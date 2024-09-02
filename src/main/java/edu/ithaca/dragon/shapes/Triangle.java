@@ -6,8 +6,8 @@ public class Triangle {
     
 
     public Triangle(double base, double height){
-        if (side1 <= 0 || side2 <= 0){
-            throw new IllegalArgumentException("Length and width must be positive values.");
+        if (base <= 0 || height <= 0){
+            throw new IllegalArgumentException("Numbers should be positive");
         }
         side1 = base;
         side2 = height;
