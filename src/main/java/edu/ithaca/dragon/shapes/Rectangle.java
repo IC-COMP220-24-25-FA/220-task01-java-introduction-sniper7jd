@@ -1,6 +1,4 @@
 package edu.ithaca.dragon.shapes;
-import java.util.List;
-import java.util.ArrayList;
 
 public class Rectangle {
     private double length;
@@ -14,7 +12,14 @@ public class Rectangle {
         this.length = length;
         this.width = width;
     }
-    
+
+    public double getWidth(){
+        return width;
+    }
+
+     public double getLength(){
+        return length;
+    } 
 
     public double calcArea(){
        return length * width;
