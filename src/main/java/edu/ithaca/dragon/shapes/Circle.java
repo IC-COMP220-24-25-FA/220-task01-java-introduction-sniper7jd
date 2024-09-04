@@ -1,6 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
-public class Circle {
+public class Circle implements Shape{
     private double radius;
 
     /**
@@ -36,5 +36,9 @@ public class Circle {
 
     public double getRadius() {
         return this.radius;
+    }
+
+    public String toString(){
+
     }
 }
