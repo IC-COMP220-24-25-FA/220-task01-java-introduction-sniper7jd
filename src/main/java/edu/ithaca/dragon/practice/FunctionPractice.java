@@ -82,16 +82,26 @@ public class FunctionPractice {
      * @return the string that has contains the most occurences of the given letter
      * @throws 
      */
-    // public static String findFirstMostOccurencesOfLetter(List<String> words, char letter){
-    //     int count = 0;
-        
-    //     for(int i = 0 ; i < words.size(); i++){
-    //         for(int j = 0; j < i; j++){
-    //             char[] array = new char[words.get(j)];
-                
-    //         }
-    //     }
-    // }
+    public static String findFirstMostOccurencesOfLetter(List<String> words, char letter){
+        String result = "";
+        int most = 0;
+
+        for (String str : words) {
+            int count = 0;
+            for (char c : str.toCharArray()) {
+                if (c == letter) {
+                    count++;
+                }
+            }
+
+            if (count > most) {
+                most = count;
+                result = str;
+            }
+        }
+
+        return result;
+    }
 
 
 }

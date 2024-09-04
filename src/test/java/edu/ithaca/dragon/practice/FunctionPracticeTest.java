@@ -61,16 +61,16 @@ public class FunctionPracticeTest {
         assertEquals(3, FunctionPractice.findLastLargest(num));
     }
     
-    // @Test
-    // public void findFirstMostOccurencesOfLetterTest(){
-    //     List<String> wordsList = new ArrayList<String>();
-    //     wordsList.add("This");
-    //     wordsList.add("That");
-    //     wordsList.add("Trello");
-    //     wordsList.add("Trick");
-    //     wordsList.add("Recommendation");
-    //     assertEquals("Trello", FunctionPractice.findFirstMostOccurencesOfLetter(wordsList, 'l'));
-    //     assertEquals("That", FunctionPractice.findFirstMostOccurencesOfLetter(wordsList, 't'));
-    //     assertEquals("Recommendation", FunctionPractice.findFirstMostOccurencesOfLetter(wordsList, 'm'));
-    // }
+    @Test
+    public void findFirstMostOccurencesOfLetterTest(){
+        List<String> wordsList = new ArrayList<String>();
+        wordsList.add("This");
+        wordsList.add("That");
+        wordsList.add("Trello");
+        wordsList.add("Trick");
+        wordsList.add("Recommendation");
+        assertEquals("Trello", FunctionPractice.findFirstMostOccurencesOfLetter(wordsList, 'l'));
+        assertEquals("That", FunctionPractice.findFirstMostOccurencesOfLetter(wordsList, 't'));
+        assertEquals("Recommendation", FunctionPractice.findFirstMostOccurencesOfLetter(wordsList, 'm'));
+    }
 }
