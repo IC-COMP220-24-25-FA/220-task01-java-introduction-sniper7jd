@@ -39,6 +39,6 @@ public class Circle implements Shape{
     }
 
     public String toString(){
-
+        return "Circle \n" + "radius: " + radius;
     }
 }

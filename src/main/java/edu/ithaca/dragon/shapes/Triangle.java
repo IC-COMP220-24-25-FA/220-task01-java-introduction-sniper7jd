@@ -27,6 +27,10 @@ public class Triangle implements Shape{
         return Math.sqrt((side1 * side1) + (side2 * side2));
     }
 
+    public String toString(){
+        return "Triangle \n" + "side1: " + side1 + "\n" + "side2: " + side2;
+    }
+
 }
 
     

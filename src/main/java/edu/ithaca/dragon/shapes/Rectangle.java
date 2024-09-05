@@ -34,6 +34,10 @@ public class Rectangle implements Shape{
         return Math.sqrt(length * length + width * width);
     }
 
+    public String toString(){
+        return "Rectangle \n" + "length: " + length + "\n" + "width: " + width;
+    }
+
 }
 
     
